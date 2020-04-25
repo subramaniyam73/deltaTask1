@@ -6,8 +6,10 @@ let sw=document.querySelector(".num").offsetWidth;
 let sw2=document.querySelector(".leftHiding").offsetWidth;
 if(screen.width>=320&&screen.width<=1024)
 {
-  document.querySelector(".leftHiding").style.left=-sw2+"px";
-  document.querySelector(".rightHiding").style.right=-sw2+"px";
+  document.querySelector(".leftHiding").style.left="0px";
+  document.querySelector(".rightHiding").style.right="0px";
+  document.querySelector(".container").style.position="absolute";
+  document.querySelector(".container").style.left=sw2+"px";
 
 }
 document.querySelectorAll(".b1")[1].style.width="0px";
@@ -1110,12 +1112,11 @@ if(screen.width>1024){
   if(screen.width<=1024&&screen.width>=320)
   {
 
-    if(screen.width>=320&&screen.width<=1024)
-    {
-      document.querySelector(".leftHiding").style.left=-sw2+"px";
-      document.querySelector(".rightHiding").style.right=-sw2+"px";
+      document.querySelector(".leftHiding").style.left="0px";
+      document.querySelector(".rightHiding").style.right="0px";
+      document.querySelector(".container").style.position="absolute";
+      document.querySelector(".container").style.left=sw2+"px";
 
-    }
 
 
     conNode1=document.querySelectorAll(".b1")[0];
